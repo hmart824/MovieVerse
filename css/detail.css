@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #030b2c;
+    font-family: 'Oxanium', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+i{
+    cursor: pointer;
+    margin-right: .4rem;
+}
+i:hover{
+    color: #0c6a42;
+}
+li p span:hover{
+    color: #0c6a42;
+    cursor: pointer;
+}
+li p{
+    width: max-content;
+    padding: 0 9px;
+    margin: 0 0 2px 0;
+}
+.container{
+    height: 90vh;
+}
+.detail-box{
+    height: 100%;
+    color: white;
+    overflow-y: scroll;
+}
+.detail{
+    width: 72%;
+}
+.detail i{
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.img{
+    height: 385px;
+    max-width: 293px;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 2px solid #0c6a42;
+    border-radius: 8px;
+}
+@media (max-width: 992px) {
+    .detail-box{
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .img{
+        margin-top: 2rem;
+    }
+    .detail{
+        width: 100%;
+    }
+}

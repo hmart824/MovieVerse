@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #030b2c;
+}
+i{
+    cursor: pointer;
+    margin-right: .4rem;
+}
+i:hover{
+    color: #0c6a42;
+}
+li p span:hover{
+    color: #0c6a42;
+    cursor: pointer;
+}
+li p{
+    width: max-content;
+    padding: 0 9px;
+    margin: 0 0 2px 0;
+}
+.search-input{
+    border-bottom: 2px solid green;
+    border-radius: 8px;
+}
+.search-input input{
+    width: 20rem;
+    outline: none;
+    border: none;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 8px;
+    background: #44444440;
+}
+.search-list{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 8px;
+    background: #030d3e;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.movie{
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    margin-bottom: 6px;
+    background: #161d4a;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.movie::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: transparent;
+}
+.movie img{
+    width: 52px;
+    height: 100%;
+    border-radius: 8px 0 0 8px;
+    object-fit: cover;
+}
+.movie-title{
+    color: white;
+    margin: 1px 0px 1px 8px;
+}
+.movie-title p{
+    height: 28px;
+    margin: 0;
+    overflow: hidden;
+}
+@media (max-width : 375px) {
+    .search-input input{
+        width: 15rem;
+    }
+    .search-list{
+        width: 15rem;
+    }
+}
+
